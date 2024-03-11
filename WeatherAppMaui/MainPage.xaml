@@ -1,5 +1,5 @@
 <ScrollView>
-    <VerticalStackLayout BackgroundColor="{StaticResource Primary}">
+    <VerticalStackLayout x:Name="stack" BackgroundColor="{StaticResource Primary}">
 
         <Label x:Name="CityLbl" 
                HorizontalOptions="Center" 
