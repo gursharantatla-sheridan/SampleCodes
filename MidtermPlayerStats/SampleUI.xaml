@@ -35,5 +35,5 @@
     </GroupBox>
 
     <Label Content="Points:" Canvas.Left="592" Canvas.Top="266" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-    <Label Canvas.Left="577" Canvas.Top="295" Height="84" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFBAD5FF" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+    <Label Canvas.Left="577" Canvas.Top="295" Height="84" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFBAD5FF" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="36"/>
 </Canvas>
