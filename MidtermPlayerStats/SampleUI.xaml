@@ -1,39 +1,39 @@
 <Canvas>
     <Label Content="Players:" Canvas.Left="138" Canvas.Top="48" FontWeight="Bold" FontSize="14"/>
-    <ListBox x:Name="lstPlayers" Height="300" Width="118" Canvas.Left="138" Canvas.Top="79" HorizontalAlignment="Center" VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=5}" TabIndex="9" FontWeight="Bold" FontSize="14" SelectionChanged="lstPlayers_SelectionChanged"/>
+    <ListBox Height="300" Width="118" Canvas.Left="138" Canvas.Top="79" HorizontalAlignment="Center" VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=5}" TabIndex="9" FontWeight="Bold" FontSize="14" />
 
-    <GroupBox x:Name="grpPlayerType" Height="58" Header="Select Type of Player" Width="379" Canvas.Left="282" Canvas.Top="52" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontSize="14">
+    <GroupBox Height="58" Header="Select Type of Player" Width="379" Canvas.Left="282" Canvas.Top="52" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontSize="14">
         <Canvas>
-            <RadioButton x:Name="rdoHockey" Content="Hockey" Height="23" Width="77" Canvas.Left="11" Canvas.Top="10" TabIndex="10" HorizontalAlignment="Left" VerticalAlignment="Center" IsChecked="False" Checked="rdoHockey_Checked" />
-            <RadioButton x:Name="rdoBasketball" Content="Basketball" Height="16" Width="129" Canvas.Left="119" Canvas.Top="10" TabIndex="11" HorizontalAlignment="Left" VerticalAlignment="Center" Checked="rdoBasketball_Checked" />
-            <RadioButton x:Name="rdoBaseball" Content="Baseball" Height="16" Width="104" Canvas.Left="253" Canvas.Top="10" TabIndex="11" HorizontalAlignment="Left" VerticalAlignment="Center" Checked="rdoBaseball_Checked" />
+            <RadioButton Content="Hockey" Height="23" Width="77" Canvas.Left="11" Canvas.Top="10" TabIndex="10" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <RadioButton Content="Basketball" Height="16" Width="129" Canvas.Left="119" Canvas.Top="10" TabIndex="11" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <RadioButton Content="Baseball" Height="16" Width="104" Canvas.Left="253" Canvas.Top="10" TabIndex="11" HorizontalAlignment="Left" VerticalAlignment="Center" />
         </Canvas>
     </GroupBox>
 
-    <GroupBox x:Name="grpInputPlayerInfo" Height="131" Header="Input the Player's Information" Width="278" Canvas.Left="282" Canvas.Top="125" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top">
+    <GroupBox Height="131" Header="Input the Player's Information" Width="278" Canvas.Left="282" Canvas.Top="125" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top">
         <Canvas>
             <Label Content="Player Name:" Canvas.Left="10" Canvas.Top="10"/>
             <Label Content="Team Name:" Canvas.Left="10" Canvas.Top="41"/>
             <Label Content="Games Played:" Canvas.Left="10" Canvas.Top="72"/>
-            <TextBox x:Name="txtPlayerName" Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="14" Width="120" TabIndex="0"/>
-            <TextBox x:Name="txtTeamName" Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="45" Width="120" TabIndex="1"/>
-            <TextBox x:Name="txtGamesPlayed" Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="76" Width="120" TabIndex="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="14" Width="120" TabIndex="0"/>
+            <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="45" Width="120" TabIndex="1"/>
+            <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="76" Width="120" TabIndex="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         </Canvas>
     </GroupBox>
 
-    <Button x:Name="btnCalculate" Content="Calculate" Canvas.Left="577" Canvas.Top="136" IsDefault="True" Height="30" Width="84" TabIndex="6" FontWeight="Bold" FontSize="14" Click="btnCalculate_Click" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Button x:Name="btnClear" Content="Clear" Canvas.Left="577" Canvas.Top="181" Height="30" Width="84" TabIndex="7" FontWeight="Bold" FontSize="14" Click="btnClear_Click" HorizontalAlignment="Center" VerticalAlignment="Top" />
-    <Button x:Name="btnClose" Content="Close" Canvas.Left="577" Canvas.Top="226" Height="30" Width="84" IsCancel="True" TabIndex="8" FontWeight="Bold" FontSize="14" Click="btnClose_Click" HorizontalAlignment="Center" VerticalAlignment="Top" />
+    <Button Content="Calculate" Canvas.Left="577" Canvas.Top="136" IsDefault="True" Height="30" Width="84" TabIndex="6" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Button Content="Clear" Canvas.Left="577" Canvas.Top="181" Height="30" Width="84" TabIndex="7" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" />
+    <Button Content="Close" Canvas.Left="577" Canvas.Top="226" Height="30" Width="84" IsCancel="True" TabIndex="8" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" />
 
-    <GroupBox x:Name="grpStats" Height="102" Header="Enter Player Stats" Width="278" Canvas.Left="282" Canvas.Top="277" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top">
+    <GroupBox Height="102" Header="Enter Player Stats" Width="278" Canvas.Left="282" Canvas.Top="277" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top">
         <Canvas Margin="0,0,-2,0">
-            <Label x:Name="lblStat1" Content="Assists:" Canvas.Left="10" Canvas.Top="10"/>
-            <Label x:Name="lblStat2" Content="Goals:" Canvas.Left="10" Canvas.Top="41" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <TextBox x:Name="txtStat1" Canvas.Left="136" TextWrapping="Wrap" Canvas.Top="14" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center" TabIndex="3"/>
-            <TextBox x:Name="txtStat2" Canvas.Left="136" TextWrapping="Wrap" Canvas.Top="44" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" TabIndex="4"/>
+            <Label Content="Assists:" Canvas.Left="10" Canvas.Top="10"/>
+            <Label Content="Goals:" Canvas.Left="10" Canvas.Top="41" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox Canvas.Left="136" TextWrapping="Wrap" Canvas.Top="14" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center" TabIndex="3"/>
+            <TextBox Canvas.Left="136" TextWrapping="Wrap" Canvas.Top="44" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" TabIndex="4"/>
         </Canvas>
     </GroupBox>
 
     <Label Content="Points:" Canvas.Left="592" Canvas.Top="266" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-    <Label x:Name="lblPoints" Canvas.Left="577" Canvas.Top="295" Height="84" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFBAD5FF" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+    <Label Canvas.Left="577" Canvas.Top="295" Height="84" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFBAD5FF" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
 </Canvas>
