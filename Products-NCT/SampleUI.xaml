@@ -1,0 +1,8 @@
+<Canvas>
+    <Label Content="Products" Canvas.Left="50" Canvas.Top="63" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <DataGrid Height="247" Width="332" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="50" Canvas.Top="102" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Button Content="Load Products" Canvas.Left="236" Canvas.Top="60" Height="37" Width="146" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <Label Content="Name" Canvas.Left="418" Canvas.Top="102" FontSize="16" FontWeight="Bold"/>
+    <TextBox Canvas.Left="478" Canvas.Top="105" Width="279" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="25"/>
+    <Button Content="Search" Canvas.Left="611" Canvas.Top="152" Height="37" Width="146" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+</Canvas>
