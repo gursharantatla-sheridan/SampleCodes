@@ -1,0 +1,15 @@
+<Canvas>
+    <Label Content="To Do Tasks" Canvas.Left="50" Canvas.Top="63" FontSize="16" FontWeight="Bold"/>
+    <DataGrid Height="247" Width="332" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="50" Canvas.Top="102" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Button Content="Load Tasks" Canvas.Left="275" Canvas.Top="60" Height="37" Width="107" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+
+    <GroupBox Height="258" Header="Add a New Task" Width="331" Canvas.Left="418" Canvas.Top="91" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Canvas>
+            <Label Content="To Do Task" Canvas.Left="10" Canvas.Top="10"/>
+            <TextBox Canvas.Left="106" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Canvas.Top="11" Width="179" HorizontalAlignment="Center" VerticalAlignment="Top" Height="100"/>
+            <Label Content="Due Date" Canvas.Left="10" Canvas.Top="132" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <DatePicker Canvas.Left="106" Canvas.Top="133" HorizontalAlignment="Center" VerticalAlignment="Top" Width="179"/>
+            <Button Content="Add" Canvas.Left="178" Canvas.Top="184" Height="37" Width="107" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+    </GroupBox>
+</Canvas>
