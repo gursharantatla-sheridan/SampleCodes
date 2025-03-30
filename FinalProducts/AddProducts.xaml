@@ -1,0 +1,11 @@
+<Canvas>
+    <Label Content="Product Name" Canvas.Left="32" Canvas.Top="39" FontSize="16" FontWeight="Bold"/>
+    <TextBox x:Name="txtProductName" Canvas.Left="155" Canvas.Top="42" Width="140" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Height="25"/>
+    <Button x:Name="btnAdd" Content="Add" Canvas.Left="215" Canvas.Top="210" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Width="80" Height="25"/>
+    <Label Content="Categories" Canvas.Left="60" Canvas.Top="157" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <ComboBox x:Name="cmbCategories" Canvas.Left="155" Canvas.Top="159" Width="140" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <DataGrid x:Name="grdProducts" Height="336" Width="426" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="333" Canvas.Top="42" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Label Content="Price" Canvas.Left="103" Canvas.Top="81" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <TextBox x:Name="txtPrice" Canvas.Left="155" Canvas.Top="84" Width="140" FontSize="16" FontWeight="Bold" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <CheckBox x:Name="chkDiscontinued" Content="Discontinued" Canvas.Left="155" Canvas.Top="125" FontSize="16" FontWeight="Bold"/>
+</Canvas>
