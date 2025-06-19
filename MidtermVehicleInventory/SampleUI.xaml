@@ -1,14 +1,14 @@
 <Canvas>
-    <ListBox x:Name="lstVehicles" Height="271" Width="250" Canvas.Left="35" Canvas.Top="78" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <ListBox Height="271" Width="250" Canvas.Left="35" Canvas.Top="78" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
     <Label Content="Id:" Canvas.Left="399" Canvas.Top="105" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     <Label Content="Name:" Canvas.Left="369" Canvas.Top="156" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     <Label Content="Rental Price:" Canvas.Left="324" Canvas.Top="205" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     <Label Content="Category:" Canvas.Left="345" Canvas.Top="257" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     <Label Content="Type:" Canvas.Left="378" Canvas.Top="310" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <TextBox x:Name="txtId" Canvas.Left="433" TextWrapping="Wrap" Canvas.Top="109" Width="120" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
-    <TextBox x:Name="txtName" Canvas.Left="433" Canvas.Top="160" Width="120" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-    <TextBox x:Name="txtRentalPrice" Canvas.Left="433" TextWrapping="Wrap" Canvas.Top="209" Width="120" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <ComboBox x:Name="cmbCategory" Canvas.Left="433" Canvas.Top="259" Width="120" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">
+    <TextBox Canvas.Left="433" TextWrapping="Wrap" Canvas.Top="109" Width="120" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+    <TextBox Canvas.Left="433" Canvas.Top="160" Width="120" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <TextBox Canvas.Left="433" TextWrapping="Wrap" Canvas.Top="209" Width="120" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <ComboBox Canvas.Left="433" Canvas.Top="259" Width="120" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">
         <ListBoxItem Content="Hatchback"/>
         <ListBoxItem Content="Sedan"/>
         <ListBoxItem Content="SUV"/>
@@ -16,19 +16,19 @@
         <ListBoxItem Content="Sports"/>
         <ListBoxItem Content="Dirt"/>
     </ComboBox>
-    <ComboBox x:Name="cmbType" Canvas.Left="433" Canvas.Top="312" Width="120" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">
+    <ComboBox Canvas.Left="433" Canvas.Top="312" Width="120" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top">
         <ListBoxItem Content="Standard"/>
         <ListBoxItem Content="Exotic"/>
         <ListBoxItem Content="Bike"/>
         <ListBoxItem Content="Trike"/>
     </ComboBox>
-    <Button x:Name="btnAdd" Content="Add" Canvas.Left="617" Canvas.Top="111" FontSize="16" FontWeight="Bold" Height="32" Width="111" HorizontalAlignment="Left" VerticalAlignment="Center" />
-    <CheckBox x:Name="chkReserved" Content="Reserved" Canvas.Left="433" Canvas.Top="365" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <RadioButton x:Name="rdoCar" Content="Car" Canvas.Left="379" Canvas.Top="62" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    <RadioButton x:Name="rdoMotorcycle" Content="Motorcycle" Canvas.Left="450" Canvas.Top="62" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Button x:Name="btnEdit" Content="Edit" Canvas.Left="617" Canvas.Top="172" FontSize="16" FontWeight="Bold" Height="32" Width="111" HorizontalAlignment="Center" VerticalAlignment="Top" IsEnabled="False" />
-    <Button x:Name="btnDelete" Content="Delete" Canvas.Left="617" Canvas.Top="234" FontSize="16" FontWeight="Bold" Height="32" Width="111" HorizontalAlignment="Center" VerticalAlignment="Top" IsEnabled="False" />
-    <Button x:Name="btnClear" Content="Clear" Canvas.Left="617" Canvas.Top="294" FontSize="16" FontWeight="Bold" Height="32" Width="111" HorizontalAlignment="Left" VerticalAlignment="Center" />
-    <Button x:Name="btnClearListBox" Content="Clear ListBox" Canvas.Left="35" Canvas.Top="366" FontSize="16" FontWeight="Bold" Height="32" Width="111" HorizontalAlignment="Center" VerticalAlignment="Top" />
-    <Button x:Name="btnResetListBox" Content="Reset ListBox to Default" Canvas.Left="35" Canvas.Top="35" FontSize="16" FontWeight="Bold" Height="32" Width="250" HorizontalAlignment="Center" VerticalAlignment="Top" />
+    <Button Content="Add" Canvas.Left="617" Canvas.Top="111" FontSize="16" FontWeight="Bold" Height="32" Width="111" HorizontalAlignment="Left" VerticalAlignment="Center" />
+    <CheckBox Content="Reserved" Canvas.Left="433" Canvas.Top="365" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <RadioButton Content="Car" Canvas.Left="379" Canvas.Top="62" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <RadioButton Content="Motorcycle" Canvas.Left="450" Canvas.Top="62" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Button Content="Edit" Canvas.Left="617" Canvas.Top="172" FontSize="16" FontWeight="Bold" Height="32" Width="111" HorizontalAlignment="Center" VerticalAlignment="Top" IsEnabled="False" />
+    <Button Content="Delete" Canvas.Left="617" Canvas.Top="234" FontSize="16" FontWeight="Bold" Height="32" Width="111" HorizontalAlignment="Center" VerticalAlignment="Top" IsEnabled="False" />
+    <Button Content="Clear" Canvas.Left="617" Canvas.Top="294" FontSize="16" FontWeight="Bold" Height="32" Width="111" HorizontalAlignment="Left" VerticalAlignment="Center" />
+    <Button Content="Clear ListBox" Canvas.Left="35" Canvas.Top="366" FontSize="16" FontWeight="Bold" Height="32" Width="111" HorizontalAlignment="Center" VerticalAlignment="Top" />
+    <Button Content="Reset ListBox to Default" Canvas.Left="35" Canvas.Top="35" FontSize="16" FontWeight="Bold" Height="32" Width="250" HorizontalAlignment="Center" VerticalAlignment="Top" />
 </Canvas>
