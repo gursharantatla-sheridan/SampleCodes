@@ -1,0 +1,39 @@
+@page "/product/{id:int}"
+
+<h1>Product Details</h1>
+
+@if (product != null)
+{
+    <div class="card p-3 m-2 shadow">
+        <h4>@product.Name</h4>
+        <p><strong>ID:</strong> @product.Id</p>
+        <p><strong>Price:</strong> @product.Price.ToString("C")</p>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        Product not found. <NavLink href="/">Go back to home</NavLink>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Product? product;
+
+    private List<Product> products = new()
+    {
+        new Product { Id = 1, Name = "Gaming Laptop", Price = 1499.99 },
+        new Product { Id = 2, Name = "Wireless Mouse", Price = 29.99 },
+        new Product { Id = 3, Name = "Mechanical Keyboard", Price = 79.50 },
+        new Product { Id = 4, Name = "27-inch Monitor", Price = 299.00 },
+        new Product { Id = 5, Name = "USB-C Dock", Price = 59.95 }
+    };
+
+    protected override void OnParametersSet()
+    {
+        product = products.Find(p => p.Id == Id);
+    }
+}
