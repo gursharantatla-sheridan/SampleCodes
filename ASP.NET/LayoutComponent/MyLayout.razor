@@ -1,0 +1,21 @@
+@inherits LayoutComponentBase
+
+<div class="container-fluid">
+    <header class="bg-primary text-white p-3">
+        <h1>My Blazor App</h1>
+    </header>
+
+    <div class="row">
+        <div class="col-4 bg-dark p-2">
+            <NavMenu />
+        </div>
+
+        <div class="col-8 p-3">
+            @Body
+        </div>
+    </div>
+
+    <footer class="mt-4 p-3 text-center text-muted">
+        © 2025 My Company
+    </footer>
+</div>
