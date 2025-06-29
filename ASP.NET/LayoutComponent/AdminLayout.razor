@@ -1,0 +1,24 @@
+@layout BaseLayout
+@inherits LayoutComponentBase
+
+<div class="layout-container">
+    <div class="sidebar bg-light">
+        <nav class="nav flex-column p-2">
+            <h5 class="text-primary">Admin Panel</h5>
+            <NavLink href="/admin/dashboard" class="nav-link">Dashboard</NavLink>
+            <NavLink href="/admin/product/1" class="nav-link">Manage Product 1</NavLink>
+            <NavLink href="/admin/product/2" class="nav-link">Manage Product 2</NavLink>
+        </nav>
+    </div>
+
+    <main>
+        <div class="top-row bg-dark text-white px-4">
+            <span>Admin Tools</span>
+            <a href="/" class="ms-auto text-white text-decoration-underline">Back to Site</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
