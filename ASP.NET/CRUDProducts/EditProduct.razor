@@ -1,0 +1,62 @@
+@page "/products/edit/{id:int}"
+
+@inject ProductService ProductService
+@inject NavigationManager Navigation
+
+@rendermode InteractiveServer
+
+<h3>Edit Product</h3>
+
+@if (product == null) {
+    <p>Product not found</p>
+}
+else {
+    <EditForm Model="product" OnValidSubmit="Save" formname="EditProductForm">
+        <div class="mb-3">
+            <label>Name:</label>
+            <InputText class="form-control" @bind-Value="product.Name" />
+        </div>
+
+        <div class="mb-3">
+            <label>Price:</label>
+            <InputNumber class="form-control" @bind-Value="product.Price" />
+        </div>
+
+        <div class="d-flex gap-2">
+            <button class="btn btn-success" type="submit">Update</button>
+            <button class="btn btn-danger" type="button" @onclick="Cancel">Cancel</button>
+        </div>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    private Product? product;
+
+    protected override async Task OnInitializedAsync()
+    {
+        product = await ProductService.GetProductByIdAsync(id);
+
+        if (product == null)
+        {
+            // Could optionally redirect or show an error
+            Navigation.NavigateTo("/products");
+        }
+    }
+
+    private async Task Save()
+    {
+        if (product != null)
+        {
+            await ProductService.UpdateAsync(product);
+            Navigation.NavigateTo("/products");
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/products");
+    }
+}
