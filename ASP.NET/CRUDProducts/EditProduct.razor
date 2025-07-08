@@ -31,13 +31,13 @@ else {
 
 @code {
     [Parameter]
-    public int id { get; set; }
+    public int Id { get; set; }
 
     private Product? product;
 
     protected override async Task OnInitializedAsync()
     {
-        product = await ProductService.GetProductByIdAsync(id);
+        product = await ProductService.GetProductByIdAsync(Id);
 
         if (product == null)
         {
