@@ -1,0 +1,40 @@
+@page "/products/add"
+
+@inject ProductService ProductService
+@inject NavigationManager Navigation
+
+@rendermode InteractiveServer
+
+<h3>Add Product</h3>
+
+<EditForm Model="product" OnValidSubmit="Save" formname="AddProductForm">
+    <div class="mb-3">
+        <label>Name:</label>
+        <InputText class="form-control" @bind-Value="product.Name" />
+    </div>
+
+    <div class="mb-3">
+        <label>Price:</label>
+        <InputNumber class="form-control" @bind-Value="product.Price" />
+    </div>
+
+    <div class="d-flex gap-2">
+        <button class="btn btn-success" type="submit">Save</button>
+        <button class="btn btn-danger" type="button" @onclick="Cancel">Cancel</button>
+    </div>
+</EditForm>
+
+@code {
+    private Product product = new();
+
+    private async Task Save()
+    {
+        await ProductService.AddAsync(product);
+        Navigation.NavigateTo("/products");
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/products");
+    }
+}
