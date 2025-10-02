@@ -1,0 +1,31 @@
+<Canvas>
+    <Label Content="Persons:" Canvas.Left="138" Canvas.Top="48" FontWeight="Bold"/>
+    <ListBox x:Name="lstPersons" Height="300" Width="118" Canvas.Left="138" Canvas.Top="79" HorizontalAlignment="Center" VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=5}" TabIndex="9" FontWeight="Bold"/>
+
+    <GroupBox x:Name="grpPersonType" Height="58" Header="Select Type of Person" Width="278" Canvas.Left="282" Canvas.Top="52" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold">
+        <Canvas>
+            <RadioButton x:Name="rdoPlayer" Content="Player" Height="15" Width="71" Canvas.Left="11" Canvas.Top="10" TabIndex="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton x:Name="rdoCoach" Content="Coach" Height="14" Width="81" Canvas.Left="87" Canvas.Top="10" TabIndex="11" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton x:Name="rdoManager" Content="Manager" Height="16" Width="77" Canvas.Left="168" Canvas.Top="10" TabIndex="11" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+    </GroupBox>
+
+    <GroupBox x:Name="grpInputPersonInfo" Height="159" Header="Input the Person's Information" Width="278" Canvas.Left="282" Canvas.Top="115" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold">
+        <Canvas>
+            <Label Content="Name:" Canvas.Left="10" Canvas.Top="10"/>
+            <TextBox x:Name="txtName" Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="14" Width="120" TabIndex="0"/>
+            <Label x:Name="lblInput1" Content="Matches Played:" Canvas.Left="10" Canvas.Top="41"/>
+            <TextBox x:Name="txtInput1" Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="45" Width="120" TabIndex="1"/>
+            <Label x:Name="lblInput2" Content="Won:" Canvas.Left="10" Canvas.Top="72"/>
+            <TextBox x:Name="txtInput2" Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="76" Width="120" TabIndex="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="lblInput3" Content="Goals Scored:" Canvas.Left="10" Canvas.Top="104" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtInput3" Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="108" Width="120" TabIndex="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+    </GroupBox>
+
+    <Button x:Name="btnCalculateContributionScore" Content="Calculate Contribution Score" Canvas.Left="282" Canvas.Top="289" IsDefault="True" Height="30" Width="278" TabIndex="6" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+    <Button x:Name="btnClear" Content="Clear" Canvas.Left="577" Canvas.Top="148" Height="30" Width="84" TabIndex="7" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" />
+    <Button x:Name="btnClose" Content="Close" Canvas.Left="577" Canvas.Top="229" Height="30" Width="84" IsCancel="True" TabIndex="8" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+    <Label Content="Contribution Score:" Canvas.Left="282" Canvas.Top="331" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+    <Label x:Name="lblContributionScore" Canvas.Left="421" Canvas.Top="335" Height="44" Width="139" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFBAD5FF" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Content="0"/>
+</Canvas>
