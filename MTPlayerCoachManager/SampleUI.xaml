@@ -12,13 +12,13 @@
 
     <GroupBox Height="159" Header="Input the Person's Information" Width="278" Canvas.Left="282" Canvas.Top="115" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold">
         <Canvas>
-            <Label Content="Name:" Canvas.Left="10" Canvas.Top="10"/>
+            <Label Content="Name" Canvas.Left="10" Canvas.Top="10"/>
             <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="14" Width="120" TabIndex="0"/>
-            <Label Content="Matches Played:" Canvas.Left="10" Canvas.Top="41"/>
+            <Label Content="Matches Played" Canvas.Left="10" Canvas.Top="41"/>
             <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="45" Width="120" TabIndex="1"/>
-            <Label Content="Won:" Canvas.Left="10" Canvas.Top="72"/>
+            <Label Content="Won" Canvas.Left="10" Canvas.Top="72"/>
             <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="76" Width="120" TabIndex="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label Content="Goals Scored:" Canvas.Left="10" Canvas.Top="104" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Goals Scored" Canvas.Left="10" Canvas.Top="104" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="108" Width="120" TabIndex="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         </Canvas>
     </GroupBox>
