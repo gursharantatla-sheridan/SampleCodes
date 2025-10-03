@@ -26,6 +26,6 @@
     <Button Content="Calculate Contribution Score" Canvas.Left="282" Canvas.Top="289" IsDefault="True" Height="30" Width="278" TabIndex="6" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
     <Button Content="Clear" Canvas.Left="577" Canvas.Top="148" Height="30" Width="84" TabIndex="7" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" />
     <Button Content="Close" Canvas.Left="577" Canvas.Top="229" Height="30" Width="84" IsCancel="True" TabIndex="8" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
-    <Label Content="Contribution Score:" Canvas.Left="282" Canvas.Top="331" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+    <Label Content="Contribution Score:" Canvas.Left="282" Canvas.Top="335" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
     <Label Canvas.Left="421" Canvas.Top="335" Height="44" Width="139" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFBAD5FF" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Content="0"/>
 </Canvas>
