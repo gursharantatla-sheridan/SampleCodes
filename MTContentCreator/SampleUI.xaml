@@ -1,0 +1,35 @@
+<Canvas>
+    <Label Content="Content Creators:" Canvas.Left="138" Canvas.Top="48" FontWeight="Bold"/>
+    <ListBox Height="300" Width="118" Canvas.Left="138" Canvas.Top="79" HorizontalAlignment="Center" VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=5}" TabIndex="9" FontWeight="Bold"/>
+
+    <GroupBox x:Name="grpCreatorType" Height="58" Header="Select Type of Content Creator" Width="278" Canvas.Left="282" Canvas.Top="52" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold">
+        <Canvas>
+            <RadioButton Content="YouTuber" Height="15" Width="71" Canvas.Left="10" Canvas.Top="10" TabIndex="10" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <RadioButton Content="Blogger" Height="14" Width="81" Canvas.Left="133" Canvas.Top="10" TabIndex="11" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        </Canvas>
+    </GroupBox>
+    
+    <GroupBox x:Name="grpInputCreatorInfo" Height="240" Header="Input the Content Creator's Information" Width="278" Canvas.Left="282" Canvas.Top="139" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold">
+        <Canvas>
+            <Label Content="Name:" Canvas.Left="10" Canvas.Top="17" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="21" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Followers:" Canvas.Left="10" Canvas.Top="48" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="52" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Videos Uploaded:" Canvas.Left="10" Canvas.Top="80" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="84" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Total Views:" Canvas.Left="10" Canvas.Top="111" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="115" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Total Likes:" Canvas.Left="10" Canvas.Top="142" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="146" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Total Comments:" Canvas.Left="10" Canvas.Top="173" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox  Canvas.Left="136" TextWrapping="NoWrap" Canvas.Top="177" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+    </GroupBox>
+    
+    <Button Content="Calculate" Canvas.Left="579" Canvas.Top="133" IsDefault="True" Height="30" Width="84" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+    <Button Content="Clear" Canvas.Left="579" Canvas.Top="178" Height="30" Width="84" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+    <Button Content="Close" Canvas.Left="579" Canvas.Top="223" Height="30" Width="84" IsCancel="True" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+    
+    <TextBlock Canvas.Left="579" TextWrapping="Wrap" Text="Engagement Rate:" Canvas.Top="298" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Width="84" TextAlignment="Center"/>
+    <Label Canvas.Left="579" Canvas.Top="335" Height="44" Width="84" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFBAD5FF" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontSize="16" Content="0"/>
+</Canvas>
