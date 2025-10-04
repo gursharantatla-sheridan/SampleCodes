@@ -4,9 +4,8 @@
 
     <GroupBox Height="58" Header="Select Type of Person" Width="278" Canvas.Left="282" Canvas.Top="52" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold">
         <Canvas>
-            <RadioButton Content="Player" Height="15" Width="71" Canvas.Left="11" Canvas.Top="10" TabIndex="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <RadioButton Content="Coach" Height="14" Width="81" Canvas.Left="87" Canvas.Top="10" TabIndex="11" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <RadioButton Content="Manager" Height="16" Width="77" Canvas.Left="168" Canvas.Top="10" TabIndex="11" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton Content="Player" Height="15" Width="71" Canvas.Left="39" Canvas.Top="10" TabIndex="10" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.729,0.594" />
+            <RadioButton Content="Coach" Height="14" Width="81" Canvas.Left="154" Canvas.Top="10" TabIndex="11" HorizontalAlignment="Left" VerticalAlignment="Center" />
         </Canvas>
     </GroupBox>
 
@@ -23,9 +22,9 @@
         </Canvas>
     </GroupBox>
 
-    <Button Content="Calculate Contribution Score" Canvas.Left="282" Canvas.Top="289" IsDefault="True" Height="30" Width="278" TabIndex="6" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
-    <Button Content="Clear" Canvas.Left="577" Canvas.Top="148" Height="30" Width="84" TabIndex="7" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" />
-    <Button Content="Close" Canvas.Left="577" Canvas.Top="229" Height="30" Width="84" IsCancel="True" TabIndex="8" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
-    <Label Content="Contribution Score:" Canvas.Left="282" Canvas.Top="335" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
-    <Label Canvas.Left="421" Canvas.Top="335" Height="44" Width="139" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFBAD5FF" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Content="0"/>
+    <Button Content="Calculate" Canvas.Left="577" Canvas.Top="127" IsDefault="True" Height="30" Width="84" TabIndex="6" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+    <Button Content="Clear" Canvas.Left="577" Canvas.Top="184" Height="30" Width="84" TabIndex="7" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" />
+    <Button Content="Close" Canvas.Left="577" Canvas.Top="244" Height="30" Width="84" IsCancel="True" TabIndex="8" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+    <Label Content="Contribution Score:" Canvas.Left="282" Canvas.Top="293" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+    <Label Content="0" Canvas.Left="421" Canvas.Top="293" Height="70" Width="139" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFBAD5FF" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" />
 </Canvas>
