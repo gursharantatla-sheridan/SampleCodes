@@ -84,7 +84,7 @@
 
     private async Task OnCategoryChanged(ChangeEventArgs e)
     { 
-        catId = Convert.ToInt32(e.Value); 
-        products = await ProductsService.GetProductsByCategoryAsync(catId); 
+        catId = Convert.ToInt32(e.Value);
+        products = await ProductsService.GetProductsByCategoryAsync(catId);
     }
 }
