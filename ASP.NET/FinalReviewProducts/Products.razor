@@ -1,0 +1,90 @@
+@page "/products"
+@rendermode InteractiveServer
+@inject ProductService ProductsService
+
+<h3>Products</h3>
+
+
+
+<!-- COPY FROM HERE -->
+
+<div class="row mb-3">
+
+    <!-- Search box -->
+    <div class="col-md-4">
+        <label>Search by Product Name:</label>
+        <input @bind="searchKeyword" class="form-control" />
+    </div>
+
+    <!-- Search button -->
+    <div class="col-md-2 d-flex align-items-end">
+        <button class="btn btn-primary w-100" @onclick="SearchAsync">Search</button>
+    </div>
+
+    <!-- Category dropdown -->
+    <div class="col-md-4">
+        <label>Filter by Category:</label>
+        <select class="form-select" @onchange="OnCategoryChanged">
+            <option value="-1">-- All Categories --</option>
+            @foreach (var cat in categories)
+            {
+                <option value="@cat.CategoryId">@cat.CategoryName</option>
+            }
+        </select>
+    </div>
+</div>
+
+<!-- Products table -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Is Discontinued</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in products)
+        {
+            <tr>
+                <td>@p.ProductId</td>
+                <td>@p.ProductName</td>
+                <td>@p.Price</td>
+                <td>@p.IsDiscontinued</td>
+                <td>@p.Category?.CategoryName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- TO HERE -->
+
+
+
+@code {
+    private string? searchKeyword;
+    private int catId = -1;
+    
+    private List<Category> categories = new();
+    private List<Product> products = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // load all categories and all products
+        categories = await ProductsService.GetCategoriesAsync();
+        products = await ProductsService.GetProductsAsync();
+    }
+
+    private async Task SearchAsync()
+    {
+        products = await ProductsService.GetProductsAsync(searchKeyword);
+    }
+
+    private async Task OnCategoryChanged(ChangeEventArgs e)
+    { 
+        catId = Convert.ToInt32(e.Value); 
+        products = await ProductsService.GetProductsByCategoryAsync(catId); 
+    }
+}
