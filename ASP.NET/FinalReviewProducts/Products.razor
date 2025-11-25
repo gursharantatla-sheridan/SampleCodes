@@ -1,6 +1,6 @@
 @page "/products"
 @rendermode InteractiveServer
-@inject ProductService ProductsService
+@inject ProductService ProductService
 
 <h3>Products</h3>
 
@@ -73,18 +73,18 @@
     protected override async Task OnInitializedAsync()
     {
         // load all categories and all products
-        categories = await ProductsService.GetCategoriesAsync();
-        products = await ProductsService.GetProductsAsync();
+        categories = await ProductService.GetCategoriesAsync();
+        products = await ProductService.GetProductsAsync();
     }
 
     private async Task SearchAsync()
     {
-        products = await ProductsService.GetProductsAsync(searchKeyword);
+        products = await ProductService.GetProductsAsync(searchKeyword);
     }
 
     private async Task OnCategoryChanged(ChangeEventArgs e)
     { 
         catId = Convert.ToInt32(e.Value);
-        products = await ProductsService.GetProductsByCategoryAsync(catId);
+        products = await ProductService.GetProductsByCategoryAsync(catId);
     }
 }
