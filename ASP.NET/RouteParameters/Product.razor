@@ -32,7 +32,7 @@ else
         new ProductModel { Id = 5, Name = "USB-C Dock", Price = 59.95 }
     };
 
-    protected override void OnParametersSet()
+    protected override void OnInitialized()
     {
         product = products.Find(p => p.Id == Id);
     }
