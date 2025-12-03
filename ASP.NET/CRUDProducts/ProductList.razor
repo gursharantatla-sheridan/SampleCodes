@@ -24,7 +24,7 @@ else {
             {
                 <tr>
                     <td>@p.Name</td>
-                    <td>@p.Price.ToString("C")</td>
+                    <td>@(p.Price?.ToString("C") ?? "")</td>
                     <td>
                         <a href="/products/edit/@p.Id" class="btn btn-sm btn-warning">Edit</a>
                         <button class="btn btn-sm btn-danger" @onclick="() => Delete(p.Id)">Delete</button>
