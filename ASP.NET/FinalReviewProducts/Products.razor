@@ -15,7 +15,7 @@
     <!-- Search box -->
     <div class="col-md-4">
         <label>Search by Product Name:</label>
-        <input @bind="searchKeyword" class="form-control" />
+        <input type="text" @bind="searchKeyword" class="form-control" />
     </div>
 
     <!-- Search button -->
@@ -66,7 +66,7 @@
 
 
 @code {
-    private string? searchKeyword;
+    private string? searchKeyword = null;
     private int catId = -1;
     
     private List<Category> categories = new();
