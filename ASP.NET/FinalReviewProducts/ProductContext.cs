@@ -15,8 +15,6 @@ public class ProductContext : DbContext
     // data seeding
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
-
         modelBuilder.Entity<Category>().HasData(
             new Category { CategoryId = 1, CategoryName = "Electronics" },
             new Category { CategoryId = 2, CategoryName = "Clothing" },
