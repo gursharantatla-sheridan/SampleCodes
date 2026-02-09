@@ -1,5 +1,5 @@
 <Canvas>
-    <Label Content="Employees:" Canvas.Left="140" Canvas.Top="55" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+    <Label Content="Employees" Canvas.Left="140" Canvas.Top="55" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
     <ListBox x:Name="lstEmployees" Height="305" Width="118" Canvas.Left="140" Canvas.Top="81" HorizontalAlignment="Center" VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="14" FontWeight="Bold"/>
     <GroupBox x:Name="grpEmployeeType" Height="58" Header="Select Type of Employee" Width="278" Canvas.Left="284" Canvas.Top="59" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontWeight="Bold">
         <Canvas>
@@ -9,9 +9,9 @@
     </GroupBox>
     <GroupBox x:Name="grpInputEmpInfo" Height="131" Header="Input the Employee's Information" Width="278" Canvas.Left="284" Canvas.Top="122" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" FontWeight="Bold">
         <Canvas>
-            <Label Content="Name:" Canvas.Left="10" Canvas.Top="10"/>
-            <Label x:Name="lblInput2" Content="Hours Worked:" Canvas.Left="10" Canvas.Top="41"/>
-            <Label x:Name="lblInput3" Content="Hourly Wage:" Canvas.Left="10" Canvas.Top="72"/>
+            <Label Content="Name" Canvas.Left="10" Canvas.Top="10"/>
+            <Label x:Name="lblInput2" Content="Hours Worked" Canvas.Left="10" Canvas.Top="41"/>
+            <Label x:Name="lblInput3" Content="Hourly Wage" Canvas.Left="10" Canvas.Top="72"/>
             <TextBox x:Name="txtName" Canvas.Left="136" TextWrapping="Wrap" Canvas.Top="14" Width="120"/>
             <TextBox x:Name="txtInput2" Canvas.Left="136" TextWrapping="Wrap" Canvas.Top="45" Width="120"/>
             <TextBox x:Name="txtInput3" Canvas.Left="136" TextWrapping="Wrap" Canvas.Top="76" Width="120"/>
@@ -22,9 +22,9 @@
     <Button x:Name="btnClose" Content="Close" Canvas.Left="579" Canvas.Top="223" Height="30" Width="84" IsCancel="True" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
     <GroupBox x:Name="grpCalculatedWage" Height="128" Header="Calculated Wage" Width="379" Canvas.Left="284" Canvas.Top="258" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" FontWeight="Bold">
         <Canvas>
-            <Label Content="Gross Earnings:" Canvas.Left="10" Canvas.Top="10"/>
-            <Label Content="Tax:" Canvas.Left="71" Canvas.Top="41"/>
-            <Label Content="Net Earnings:" Canvas.Left="20" Canvas.Top="72"/>
+            <Label Content="Gross Earnings" Canvas.Left="10" Canvas.Top="10"/>
+            <Label Content="Tax" Canvas.Left="71" Canvas.Top="41"/>
+            <Label Content="Net Earnings" Canvas.Left="20" Canvas.Top="72"/>
             <TextBox x:Name="txtGrossEarnings" Canvas.Left="125" TextWrapping="Wrap" Canvas.Top="14" Width="232" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="txtTax" Canvas.Left="125" TextWrapping="Wrap" Canvas.Top="45" Width="232" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="txtNetEarnings" Canvas.Left="125" TextWrapping="Wrap" Canvas.Top="76" Width="232" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Center"/>
