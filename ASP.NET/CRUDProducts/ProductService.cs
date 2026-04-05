@@ -1,6 +1,6 @@
 public class ProductService
 {
-    private readonly AppDbContext _context;
+    private AppDbContext _context;
 
     public ProductService(AppDbContext context)
     {
