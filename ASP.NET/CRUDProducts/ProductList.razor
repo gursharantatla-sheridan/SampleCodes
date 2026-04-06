@@ -16,7 +16,6 @@ else {
             <tr>
                 <th>Name</th>
                 <th>Price</th>
-                <th>Category</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -26,10 +25,9 @@ else {
                 <tr>
                     <td>@p.Name</td>
                     <td>@(p.Price?.ToString("C") ?? "")</td>
-                    <td>@p.Category?.CategoryName</td>
                     <td>
-                        <a href="/products/edit/@p.Id" class="btn btn-sm btn-warning">Edit</a>
-                        <button class="btn btn-sm btn-danger" @onclick="() => Delete(p.Id)">Delete</button>
+                        <a href="/products/edit/@p.ProductId" class="btn btn-sm btn-warning">Edit</a>
+                        <button class="btn btn-sm btn-danger" @onclick="() => Delete(p.ProductId)">Delete</button>
                     </td>
                 </tr>
             }
