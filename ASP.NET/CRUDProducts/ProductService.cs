@@ -9,14 +9,11 @@ public class ProductService
     
     public async Task<List<Product>> GetProductsAsync()
     {
-        var products = _context.Products
-                               .Include(p => p.Category)    // includes category of each product
-                               .ToListAsync();
-
-        return await products;
+        return await _context.Products.ToListAsync();
     }
 
-    // ---- Copy from here ----
+    
+    // ---- COPY FROM HERE ----
 
     public async Task<Product?> GetProductByIdAsync(int id)
     {
@@ -46,5 +43,5 @@ public class ProductService
         }
     }
 
-    // ---- Copy to here ----
+    // ---- COPY TO HERE ----
 }
