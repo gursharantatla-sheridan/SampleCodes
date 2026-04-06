@@ -6,9 +6,14 @@ public class ProductService
     {
         _context = context;
     }
+    
     public async Task<List<Product>> GetProductsAsync()
     {
-        return await _context.Products.ToListAsync();
+        var products = _context.Products
+                               .Include(p => p.Category)    // includes category of each product
+                               .ToListAsync();
+
+        return await products;
     }
 
     // ---- Copy from here ----
