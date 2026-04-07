@@ -47,7 +47,7 @@
 
     private async Task Save()
     {
-        await ProductService.AddAsync(product);
+        await ProductService.AddProductAsync(product);
         Navigation.NavigateTo("/products");
     }
 
