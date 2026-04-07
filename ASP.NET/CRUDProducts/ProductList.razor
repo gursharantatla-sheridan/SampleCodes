@@ -45,7 +45,7 @@ else {
 
     private async Task Delete(int id)
     {
-        await ProductService.DeleteAsync(id);
+        await ProductService.DeleteProductAsync(id);
         products = await ProductService.GetProductsAsync(); // Refresh list
     }
 }
