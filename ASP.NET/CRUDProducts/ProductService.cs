@@ -20,19 +20,19 @@ public class ProductService
         return await _context.Products.FindAsync(id);
     }
 
-    public async Task AddAsync(Product product)
+    public async Task AddProductAsync(Product product)
     {
         _context.Products.Add(product);
         await _context.SaveChangesAsync();
     }
 
-    public async Task UpdateAsync(Product product)
+    public async Task UpdateProductAsync(Product product)
     {
         _context.Products.Update(product);
         await _context.SaveChangesAsync();
     }
 
-    public async Task DeleteAsync(int id)
+    public async Task DeleteProductAsync(int id)
     {
         var product = await _context.Products.FindAsync(id);
 
