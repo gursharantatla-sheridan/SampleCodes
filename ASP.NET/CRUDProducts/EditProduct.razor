@@ -65,7 +65,7 @@ else {
     {
         if (product != null)
         {
-            await ProductService.UpdateAsync(product);
+            await ProductService.UpdateProductAsync(product);
             Navigation.NavigateTo("/products");
         }
     }
