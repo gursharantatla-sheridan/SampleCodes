@@ -1,0 +1,37 @@
+<div class="row mb-3">
+
+    <!-- Search text box -->
+    <div class="col-md-4">
+        <label>Search Students by Name:</label>
+        <input type="text" class="form-control" />
+    </div>
+
+    <!-- Search button -->
+    <div class="col-md-2 d-flex align-items-end">
+        <button class="btn btn-primary w-100">Search</button>
+    </div>
+
+    <!-- Standard dropdown -->
+    <div class="col-md-4">
+        <label>Filter by Standard:</label>
+        <select class="form-select">
+            <option value="-1">-- All Standards --</option>
+            <!-- add a foreach loop here to add standards to the dropdown -->
+        </select>
+    </div>
+</div>
+
+<!-- Students table -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Age</th>
+            <th>Standard</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- add a foreach loop here to add students to the table -->
+    </tbody>
+</table>
