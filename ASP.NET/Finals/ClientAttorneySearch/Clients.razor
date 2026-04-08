@@ -1,0 +1,37 @@
+<div class="row mb-3">
+
+    <!-- Search text box -->
+    <div class="col-md-4">
+        <label>Search Clients by Name:</label>
+        <input type="text" class="form-control" />
+    </div>
+
+    <!-- Search button -->
+    <div class="col-md-2 d-flex align-items-end">
+        <button class="btn btn-primary w-100">Search</button>
+    </div>
+
+    <!-- Attorney dropdown -->
+    <div class="col-md-4">
+        <label>Filter by Attorney:</label>
+        <select class="form-select">
+            <option value="-1">-- All Attorneys --</option>
+            <!-- add a foreach loop here to add attorneys to the dropdown -->
+        </select>
+    </div>
+</div>
+
+<!-- Clients table -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Client Id</th>
+            <th>Client Name</th>
+            <th>City</th>
+            <th>Attorney</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- add a foreach loop here to add clients to the table -->
+    </tbody>
+</table>
