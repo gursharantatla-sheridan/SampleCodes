@@ -1,26 +1,22 @@
 <ScrollView>
-    <VerticalStackLayout x:Name="stack" BackgroundColor="{StaticResource Primary}">
+    <VerticalStackLayout x:Name="stack" Spacing="10" BackgroundColor="{StaticResource Primary}">
 
         <Label x:Name="CityLbl" 
                HorizontalOptions="Center" 
-               Margin="10" 
                FontSize="20"/>
         
         <Label x:Name="TemperatureLbl" 
                HorizontalOptions="Center" 
-               Margin="10" 
                FontSize="50"/>
         
         <Label x:Name="ConditionsLbl" 
                HorizontalOptions="Center" 
-               Margin="10" 
                FontSize="20"/>
 
         <Image x:Name="WeatherImg"
                WidthRequest="200"
                HeightRequest="200"
-               HorizontalOptions="Center"
-               Margin="10" />
+               HorizontalOptions="Center" />
 
         <Button x:Name="GetWeatherBtn" 
                 Text="Get Weather" 
