@@ -1,17 +1,22 @@
 <ScrollView>
-    <VerticalStackLayout x:Name="stack" Spacing="10" BackgroundColor="{StaticResource Primary}">
+    <VerticalStackLayout x:Name="stack" 
+                         Spacing="10" 
+                         BackgroundColor="{StaticResource MidnightBlue}">
 
         <Label x:Name="CityLbl" 
                HorizontalOptions="Center" 
-               FontSize="20"/>
-        
+               FontSize="20"
+               TextColor="White"/>
+
         <Label x:Name="TemperatureLbl" 
                HorizontalOptions="Center" 
-               FontSize="50"/>
-        
+               FontSize="50"
+               TextColor="White"/>
+
         <Label x:Name="ConditionsLbl" 
                HorizontalOptions="Center" 
-               FontSize="20"/>
+               FontSize="20"
+               TextColor="White"/>
 
         <Image x:Name="WeatherImg"
                WidthRequest="200"
@@ -20,9 +25,8 @@
 
         <Button x:Name="GetWeatherBtn" 
                 Text="Get Weather" 
-                VerticalOptions="End"
                 Margin="20"
                 Clicked="OnGetWeatherBtnClicked" />
-        
+
     </VerticalStackLayout>
 </ScrollView>
