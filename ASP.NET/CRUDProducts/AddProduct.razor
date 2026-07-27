@@ -7,10 +7,10 @@
 
 <h3>Add Product</h3>
 
-<EditForm Model="product" OnValidSubmit="Save" formname="AddProductForm">
+<EditForm Model="product" OnValidSubmit="Save" FormName="AddProductForm">
     <div class="mb-3">
         <label>Name:</label>
-        <InputText class="form-control" @bind-Value="product.Name" />
+        <InputText class="form-control" @bind-Value="product.ProductName" />
     </div>
 
     <div class="mb-3">
