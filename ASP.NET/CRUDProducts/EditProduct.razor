@@ -11,10 +11,10 @@
     <p>Product not found</p>
 }
 else {
-    <EditForm Model="product" OnValidSubmit="Save" formname="EditProductForm">
+    <EditForm Model="product" OnValidSubmit="Save" FormName="EditProductForm">
         <div class="mb-3">
             <label>Name:</label>
-            <InputText class="form-control" @bind-Value="product.Name" />
+            <InputText class="form-control" @bind-Value="product.ProductName" />
         </div>
 
         <div class="mb-3">
