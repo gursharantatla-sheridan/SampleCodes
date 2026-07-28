@@ -1,0 +1,48 @@
+@page "/countries"
+@rendermode InteractiveServer
+@inject WorldService WorldService
+
+<h3>Countries</h3>
+
+<div class="row mb-3">
+
+    <!-- Search text box -->
+    <div class="col-md-4">
+        <label>Search Countries by Name:</label>
+        <input type="text" class="form-control" />
+    </div>
+
+    <!-- Search button -->
+    <div class="col-md-2 d-flex align-items-end">
+        <button class="btn btn-primary w-100">Search</button>
+    </div>
+
+    <!-- Continent dropdown -->
+    <div class="col-md-4">
+        <label>Filter by Continent:</label>
+        <select class="form-select">
+            <option value="-1">-- All Continents --</option>
+            <!-- add a foreach loop here to add continents to the dropdown -->
+        </select>
+    </div>
+</div>
+
+<!-- Countries table -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Country Id</th>
+            <th>Country Name</th>
+            <th>Currency</th>
+            <th>Continent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- add a foreach loop here to add countries to the table -->
+    </tbody>
+</table>
+
+
+@code {
+
+}
