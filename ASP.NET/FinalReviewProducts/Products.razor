@@ -6,32 +6,25 @@
 
 <h3>Products</h3>
 
-
-
-<!-- COPY FROM HERE -->
-
 <div class="row mb-3">
 
     <!-- Search box -->
     <div class="col-md-4">
         <label>Search by Product Name:</label>
-        <input type="text" @bind="searchKeyword" class="form-control" />
+        <input type="text" class="form-control" />
     </div>
 
     <!-- Search button -->
     <div class="col-md-2 d-flex align-items-end">
-        <button class="btn btn-primary w-100" @onclick="SearchByName">Search</button>
+        <button class="btn btn-primary w-100">Search</button>
     </div>
 
     <!-- Category dropdown -->
     <div class="col-md-4">
         <label>Filter by Category:</label>
-        <select class="form-select" @onchange="OnCategoryChanged">
+        <select class="form-select">
             <option value="-1">-- All Categories --</option>
-            @foreach (var cat in categories)
-            {
-                <option value="@cat.CategoryId">@cat.CategoryName</option>
-            }
+            <!-- add a foreach loop here to add products to the dropdown -->
         </select>
     </div>
 </div>
@@ -48,45 +41,11 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var p in products)
-        {
-            <tr>
-                <td>@p.ProductId</td>
-                <td>@p.ProductName</td>
-                <td>@p.Price</td>
-                <td>@p.IsDiscontinued</td>
-                <td>@p.Category?.CategoryName</td>
-            </tr>
-        }
+        <!-- add a foreach loop here to add products to the table -->
     </tbody>
 </table>
 
-<!-- TO HERE -->
-
-
 
 @code {
-    private string? searchKeyword = null;
-    private int catId = -1;
-    
-    private List<Category> categories = new();
-    private List<Product> products = new();
 
-    protected override async Task OnInitializedAsync()
-    {
-        // load all categories and all products
-        categories = await ProductService.GetCategoriesAsync();
-        products = await ProductService.GetProductsAsync();
-    }
-
-    private async Task SearchByName()
-    {
-        products = await ProductService.GetProductsAsync(searchKeyword);
-    }
-
-    private async Task OnCategoryChanged(ChangeEventArgs e)
-    { 
-        catId = Convert.ToInt32(e.Value);
-        products = await ProductService.GetProductsByCategoryAsync(catId);
-    }
 }
