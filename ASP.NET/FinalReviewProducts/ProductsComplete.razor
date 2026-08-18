@@ -23,10 +23,10 @@
     <div class="col-md-4">
         <label>Filter by Category:</label>
         <select class="form-select" @onchange="OnCategoryChanged">
-            <option value="-1">-- All Categories --</option>
-            @foreach (var cat in categories)
+            <option value="0">-- All Categories --</option>
+            @foreach (var c in categories)
             {
-                <option value="@cat.CategoryId">@cat.CategoryName</option>
+                <option value="@c.CategoryId">@c.CategoryName</option>
             }
         </select>
     </div>
@@ -38,8 +38,6 @@
         <tr>
             <th>Product Id</th>
             <th>Name</th>
-            <th>Price</th>
-            <th>Is Discontinued</th>
             <th>Category</th>
         </tr>
     </thead>
@@ -49,8 +47,6 @@
             <tr>
                 <td>@p.ProductId</td>
                 <td>@p.ProductName</td>
-                <td>@p.Price</td>
-                <td>@p.IsDiscontinued</td>
                 <td>@p.Category?.CategoryName</td>
             </tr>
         }
@@ -59,27 +55,27 @@
 
 
 @code {
-    private string? searchKeyword = null;
-    private int catId = -1;
+    private string searchKeyword = "";
+    private int catId = 0;
     
     private List<Category> categories = new();
     private List<Product> products = new();
 
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         // load all categories and all products
-        categories = await ProductService.GetCategoriesAsync();
-        products = await ProductService.GetProductsAsync();
+        categories = ProductService.GetCategories();
+        products = ProductService.GetProducts();
     }
 
-    private async Task SearchByName()
+    private void SearchByName()
     {
-        products = await ProductService.GetProductsAsync(searchKeyword);
+        products = ProductService.GetProductsByName(searchKeyword);
     }
 
-    private async Task OnCategoryChanged(ChangeEventArgs e)
+    private void OnCategoryChanged(ChangeEventArgs e)
     { 
         catId = Convert.ToInt32(e.Value);
-        products = await ProductService.GetProductsByCategoryAsync(catId);
+        products = ProductService.GetProductsByCategory(catId);
     }
 }
