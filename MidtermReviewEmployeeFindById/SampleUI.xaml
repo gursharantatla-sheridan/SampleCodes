@@ -1,3 +1,8 @@
+<!-- Set the following properties of the Window element:
+    FontSize="16" FontWeight="Bold" 
+    ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+-->
+
 <Canvas Background="AliceBlue">
 
     <GroupBox Header="Employee Type" Height="137" Width="228" Canvas.Left="80" Canvas.Top="46" HorizontalAlignment="Left" VerticalAlignment="Center">
