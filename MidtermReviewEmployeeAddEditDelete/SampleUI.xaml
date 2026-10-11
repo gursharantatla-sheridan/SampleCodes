@@ -1,0 +1,42 @@
+<Canvas Background="PowderBlue">
+
+    <Button x:Name="btnResetListBox" Content="Reset ListBox to Default" Canvas.Left="35" Canvas.Top="35" Height="32" Width="250" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Background="RoyalBlue" Foreground="White"/>
+    <ListBox x:Name="lstEmployees" Height="308" Width="250" Canvas.Left="35" Canvas.Top="78" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Background="LightYellow" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
+    <GroupBox Height="68" Header="Employee Category" Width="295" Canvas.Left="433" Canvas.Top="17" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold">
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <RadioButton x:Name="rdoHourly" Content="Hourly" Canvas.Left="379" Canvas.Top="62" Margin="5"/>
+            <RadioButton x:Name="rdoCommission" Content="Commission" Canvas.Left="450" Canvas.Top="62" Margin="5"/>
+        </StackPanel>
+    </GroupBox>
+
+    <Label Content="Id" Canvas.Right="355" Canvas.Top="105" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+    <TextBox x:Name="txtId" Canvas.Left="433" TextWrapping="NoWrap" Canvas.Top="109" Width="133" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+
+    <Label Content="Name" Canvas.Right="355" Canvas.Top="145" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+    <TextBox x:Name="txtName" Canvas.Left="433" Canvas.Top="149" TextWrapping="NoWrap" Width="133" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+
+    <Label x:Name="lblHoursOrGrossSales" Content="Hours" Canvas.Right="355" Canvas.Top="186" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+    <TextBox x:Name="txtHoursOrGrossSales" Canvas.Left="433" TextWrapping="NoWrap" Canvas.Top="190" Width="133" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+
+    <Label x:Name="lblWageOrCommRate" Content="Wage" Canvas.Right="355" Canvas.Top="228" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+    <TextBox x:Name="txtWageOrCommRate" Canvas.Left="433" TextWrapping="NoWrap" Canvas.Top="232" Width="133" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+    <Label x:Name="lblPercentageSymbol" Content="%" Canvas.Right="355" Canvas.Top="228" HorizontalAlignment="Left" Canvas.Left="564" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+
+    <Label Content="Type" Canvas.Right="355" Canvas.Top="272" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+    <ComboBox x:Name="cmbType" Canvas.Left="433" Canvas.Top="274" Width="133" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold">
+        <ListBoxItem Content="FullTime"/>
+        <ListBoxItem Content="PartTime"/>
+        <ListBoxItem Content="Contractor"/>
+    </ComboBox>
+
+    <CheckBox x:Name="chkIsUnionMember" Content="Union Member" Canvas.Left="433" Canvas.Top="316" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+
+    <Label Content="Earnings" Canvas.Right="355" Canvas.Top="355" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+    <Label x:Name="lblEarnings" Content="" Canvas.Left="433" Canvas.Top="355" HorizontalAlignment="Left" VerticalAlignment="Center" Width="133" FontSize="16" FontWeight="Bold" Background="DarkBlue" Foreground="White" BorderBrush="Black" BorderThickness="1"/>
+
+    <Button x:Name="btnSave" Content="Save" Canvas.Left="617" Canvas.Top="111" Height="32" Width="111" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold" Background="RoyalBlue" Foreground="White"/>
+    <Button x:Name="btnDelete" Content="Delete" Canvas.Left="617" Canvas.Top="190" Height="32" Width="111" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Background="RoyalBlue" Foreground="White"/>
+    <Button x:Name="btnClear" Content="Clear" Canvas.Left="617" Canvas.Top="269" Height="32" Width="111" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Background="RoyalBlue" Foreground="White"/>
+
+</Canvas>
