@@ -1,11 +1,6 @@
-<!-- Set the following properties of the Window element:
-    FontSize="16" FontWeight="Bold" 
-    ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
--->
-
 <Canvas Background="AliceBlue">
 
-    <GroupBox Header="Employee Type" Height="137" Width="228" Canvas.Left="80" Canvas.Top="46" HorizontalAlignment="Left" VerticalAlignment="Center">
+    <GroupBox Header="Employee Type" Height="137" Width="228" Canvas.Left="80" Canvas.Top="46" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold">
         <StackPanel Margin="5">
             <RadioButton x:Name="rdoHrEmp" Content="Hourly" Canvas.Left="10" Canvas.Top="14" Margin="5" IsChecked="True"/>
             <RadioButton x:Name="rdoCommEmp" Content="Commission" Canvas.Left="10" Canvas.Top="39" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5"/>
@@ -13,22 +8,22 @@
         </StackPanel>
     </GroupBox>
 
-    <DataGrid x:Name="grdEmployees" Height="147" Width="616" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="80" Canvas.Top="242" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <DataGrid x:Name="grdEmployees" Height="147" Width="616" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="80" Canvas.Top="242" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
 
-    <Label Content="Employee Id" Canvas.Right="300" Canvas.Top="36" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    <TextBox x:Name="txtEmployeeId" Canvas.Left="496" TextWrapping="NoWrap" Canvas.Top="39" Width="95" HorizontalAlignment="Left" VerticalAlignment="Center" Height="25"/>
-    <Button x:Name="btnFind" Content="Find" Canvas.Left="596" Canvas.Top="39" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100"/>
+    <Label Content="Employee Id" Canvas.Right="300" Canvas.Top="36" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+    <TextBox x:Name="txtEmployeeId" Canvas.Left="496" TextWrapping="NoWrap" Canvas.Top="39" Width="95" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold" Height="25"/>
+    <Button x:Name="btnFind" Content="Find" Canvas.Left="596" Canvas.Top="39" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" IsDefault="True" FontSize="16" FontWeight="Bold"/>
 
-    <Label Content="Name" Canvas.Right="300" Canvas.Top="73" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    <Label x:Name="lblName" Content="" Canvas.Left="496" Canvas.Top="69" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" BorderBrush="Black" BorderThickness="1"/>
+    <Label Content="Name" Canvas.Right="300" Canvas.Top="73" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+    <Label x:Name="lblName" Content="" Canvas.Left="496" Canvas.Top="69" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" FontSize="16" FontWeight="Bold" BorderBrush="Black" BorderThickness="1"/>
 
-    <Label x:Name="hoursOrGrossSalesLabel" Content="Hours" Canvas.Right="300" Canvas.Top="108" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    <Label x:Name="lblHoursOrGrossSales" Content="" Canvas.Left="496" Canvas.Top="107" Width="200" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <Label x:Name="hoursOrGrossSalesLabel" Content="Hours" Canvas.Right="300" Canvas.Top="108" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+    <Label x:Name="lblHoursOrGrossSales" Content="" Canvas.Left="496" Canvas.Top="107" Width="200" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
 
-    <Label x:Name="wageOrCommRateLabel" Content="Wage" Canvas.Right="300" Canvas.Top="145" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    <Label x:Name="lblWageOrCommRate" Content="" Canvas.Left="496" Canvas.Top="144" Width="200" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <Label x:Name="wageOrCommRateLabel" Content="Wage" Canvas.Right="300" Canvas.Top="145" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+    <Label x:Name="lblWageOrCommRate" Content="" Canvas.Left="496" Canvas.Top="144" Width="200" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
 
-    <Label Content="Gross Earnings" Canvas.Right="300" Canvas.Top="195" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    <Label x:Name="lblGrossEarnings" Content="" Canvas.Left="496" Canvas.Top="194" Width="200" BorderBrush="Black" BorderThickness="1" Background="CornflowerBlue" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <Label Content="Gross Earnings" Canvas.Right="300" Canvas.Top="195" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+    <Label x:Name="lblGrossEarnings" Content="" Canvas.Left="496" Canvas.Top="194" Width="200" BorderBrush="Black" BorderThickness="1" Background="CornflowerBlue" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
 
 </Canvas>
